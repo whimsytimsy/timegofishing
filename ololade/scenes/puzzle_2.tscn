@@ -180,7 +180,7 @@ sources/0 = SubResource("TileSetAtlasSource_4rqvl")
 [node name="puzzle2" type="Node2D" unique_id=879458323]
 
 [node name="Player" parent="." unique_id=804321168 instance=ExtResource("1_fnuvl")]
-position = Vector2(71, 73)
+position = Vector2(72, 84)
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=1753962118]
 zoom = Vector2(4, 4)
@@ -190,5 +190,5 @@ tile_map_data = PackedByteArray("AAD+/wcAAAAAAAAAAAD//wcAAAAAAAAAAAAAAAcAAAAAAAA
 tile_set = SubResource("TileSet_totph")
 
 [node name="RigidBody2D" parent="." unique_id=740741015 instance=ExtResource("3_fnuvl")]
-position = Vector2(103, 74)
+position = Vector2(104, 88)
 gravity_scale = 0.38
