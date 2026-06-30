@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://jqd52nwwcjr3"]
+
+[ext_resource type="Script" uid="uid://btj27xnvk4k1s" path="res://May/NPC 2!!!!!/interacting_componet.gd" id="1_6ggho"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_645ul"]
+radius = 18.95
+
+[sub_resource type="LabelSettings" id="LabelSettings_6ggho"]
+font_size = 14
+
+[node name="InteractingComponet" type="Node2D" unique_id=1766059560]
+script = ExtResource("1_6ggho")
+
+[node name="InteractRange" type="Area2D" parent="." unique_id=1478360624]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractRange" unique_id=105482323]
+shape = SubResource("CircleShape2D_645ul")
+
+[node name="InteractLabel" type="Label" parent="." unique_id=1727745791]
+z_index = 10
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -58.0
+offset_top = -53.0
+offset_right = 57.0
+offset_bottom = -30.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "E TO INTERACT"
+label_settings = SubResource("LabelSettings_6ggho")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="area_entered" from="InteractRange" to="." method="_on_interact_range_area_entered"]
+[connection signal="area_exited" from="InteractRange" to="." method="_on_interact_range_area_exited"]

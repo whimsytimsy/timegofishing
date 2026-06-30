@@ -1,3 +1,8 @@
 [gd_scene format=3 uid="uid://c4qd38g14aiow"]
 
-[node name="NewScene" type="Node2D" unique_id=2037591526]
+[ext_resource type="Script" uid="uid://bv7a74q6oclyc" path="res://May/npc2.gd" id="1_nxdrp"]
+
+[node name="Interactable" type="Area2D" unique_id=42440049]
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("1_nxdrp")
