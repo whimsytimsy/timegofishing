@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bqtmeolj02s1c"
-path="res://.godot/imported/fruit.png-d88f553f3456a5983e465f7e6285fcf2.ctex"
+uid="uid://doypvw5jkdmol"
+path="res://.godot/imported/player walk.png-5c38df2512cd251b125baf48509f0547.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ololade/assets/sprites/fruit.png"
-dest_files=["res://.godot/imported/fruit.png-d88f553f3456a5983e465f7e6285fcf2.ctex"]
+source_file="res://katherine/gameart/player walk.png"
+dest_files=["res://.godot/imported/player walk.png-5c38df2512cd251b125baf48509f0547.ctex"]
 
 [params]
 

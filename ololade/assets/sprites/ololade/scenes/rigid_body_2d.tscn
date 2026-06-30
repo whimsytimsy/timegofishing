@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://cqqhrlcugev5g"]
+
+[ext_resource type="Texture2D" uid="uid://b23iqlu47tsdm" path="res://ololade/assets/sprites/world_tileset.png" id="1_ons8i"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ons8i"]
+size = Vector2(16, 16)
+
+[node name="RigidBody2D" type="RigidBody2D" unique_id=740741015]
+mass = 0.001
+gravity_scale = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1797426691]
+shape = SubResource("RectangleShape2D_ons8i")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1480063292]
+texture = ExtResource("1_ons8i")
+region_enabled = true
+region_rect = Rect2(112, 48, 16, 16)

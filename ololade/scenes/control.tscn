@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://b2wgpxkra7ssl"]
+
+[ext_resource type="Script" uid="uid://cfylhgpovur1v" path="res://ololade/scripts/item_button.gd" id="1_erx5q"]
+
+[node name="Control" type="Control" unique_id=327553204]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="GridContainer" type="GridContainer" parent="." unique_id=2026298286]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -16.0
+offset_top = -8.0
+offset_right = 16.0
+grow_horizontal = 2
+grow_vertical = 0
+columns = 10
+
+[node name="ItemButton" type="Button" parent="GridContainer" unique_id=849213283]
+layout_mode = 2
+script = ExtResource("1_erx5q")
+
+[node name="ItemButton2" type="Button" parent="GridContainer" unique_id=1163678429]
+layout_mode = 2
+
+[node name="ItemButton3" type="Button" parent="GridContainer" unique_id=955218242]
+layout_mode = 2
