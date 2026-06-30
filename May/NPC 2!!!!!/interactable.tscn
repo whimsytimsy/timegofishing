@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://bse3ofloln8gp"]
+
+[ext_resource type="Script" uid="uid://vo3vd5rulq3y" path="res://May/NPC 2!!!!!/interactable.gd" id="1_41rkw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_41rkw"]
+
+[node name="interactable" type="Area2D" unique_id=1583510944]
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("1_41rkw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=307620385]
+shape = SubResource("RectangleShape2D_41rkw")

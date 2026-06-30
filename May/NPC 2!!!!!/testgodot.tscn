@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://hxt0ulhcwg43"]
+
+[ext_resource type="Script" uid="uid://b2xejf7dc0in1" path="res://May/NPC 2!!!!!/testgodot.gd" id="1_bffcx"]
+[ext_resource type="Texture2D" uid="uid://4q335xxs2p" path="res://icon.svg" id="1_uxhar"]
+[ext_resource type="PackedScene" uid="uid://bse3ofloln8gp" path="res://May/NPC 2!!!!!/interactable.tscn" id="2_oe7gd"]
+[ext_resource type="PackedScene" uid="uid://dfjmgbfc2sb05" path="res://May/NPC 2!!!!!/testplayer.tscn" id="4_lynk3"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_bffcx"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_oe7gd"]
+radius = 82.67
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0bx5i"]
+size = Vector2(458, 20)
+
+[node name="godot" type="StaticBody2D" unique_id=1645024556]
+script = ExtResource("1_bffcx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=743632848]
+shape = SubResource("CircleShape2D_bffcx")
+
+[node name="Icon" type="Sprite2D" parent="." unique_id=1836757005]
+position = Vector2(0, -19)
+texture = ExtResource("1_uxhar")
+
+[node name="interactable" parent="." unique_id=1583510944 instance=ExtResource("2_oe7gd")]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="interactable" unique_id=1517780492]
+position = Vector2(-3, -21)
+shape = SubResource("CircleShape2D_oe7gd")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1699310332]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1696735153]
+position = Vector2(154, 76)
+shape = SubResource("RectangleShape2D_0bx5i")
+
+[node name="Player" parent="StaticBody2D" unique_id=804321168 instance=ExtResource("4_lynk3")]
+position = Vector2(179, 16)

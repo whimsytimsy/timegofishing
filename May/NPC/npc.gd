@@ -14,13 +14,6 @@ func ready():
 	randomize()
 	start_pos = position 
 
-@export var interaction_name: String = ""
-@export var is_interactble: bool = true
-
-var interact: Callable = func():
-	pass 
-
-@onready var interact_label: Label
 var current_interactions :=[]
 var can_interact := true
 
