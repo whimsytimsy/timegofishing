@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b1hnevfske5px"
-path="res://.godot/imported/slime_purple.png-087e6397858f6f4003f03c2ebed48452.ctex"
+uid="uid://lnweg47q37kp"
+path="res://.godot/imported/player dash.png-ce3c5ac8383c83abdaddc52ff958591c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ololade/assets/sprites/slime_purple.png"
-dest_files=["res://.godot/imported/slime_purple.png-087e6397858f6f4003f03c2ebed48452.ctex"]
+source_file="res://katherine/gameart/player dash.png"
+dest_files=["res://.godot/imported/player dash.png-ce3c5ac8383c83abdaddc52ff958591c.ctex"]
 
 [params]
 

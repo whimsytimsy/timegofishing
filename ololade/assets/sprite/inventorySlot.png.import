@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bcamvvh0hjosb"
-path="res://.godot/imported/coin.png-02952acbdba73e14ec3d582524b5db5e.ctex"
+uid="uid://bah0qrmc8yk5b"
+path="res://.godot/imported/inventorySlot.png-cc23d04861c5a6abbe4295efb9aa762f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ololade/assets/sprites/coin.png"
-dest_files=["res://.godot/imported/coin.png-02952acbdba73e14ec3d582524b5db5e.ctex"]
+source_file="res://ololade/assets/sprite/inventorySlot.png"
+dest_files=["res://.godot/imported/inventorySlot.png-cc23d04861c5a6abbe4295efb9aa762f.ctex"]
 
 [params]
 

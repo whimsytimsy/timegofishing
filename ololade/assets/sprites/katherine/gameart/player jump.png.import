@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cuptyeifhti5d"
-path="res://.godot/imported/platforms.png-6a6f1b36f529bab11db5f94a0b4851d5.ctex"
+uid="uid://crv61p2kmbww2"
+path="res://.godot/imported/player jump.png-daf5048bfd31896c1ea0864cafd59612.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://ololade/assets/sprites/platforms.png"
-dest_files=["res://.godot/imported/platforms.png-6a6f1b36f529bab11db5f94a0b4851d5.ctex"]
+source_file="res://katherine/gameart/player jump.png"
+dest_files=["res://.godot/imported/player jump.png-daf5048bfd31896c1ea0864cafd59612.ctex"]
 
 [params]
 
