@@ -8,5 +8,9 @@ func _ready() -> void:
 	
 func _on_interact():
 	interactable.is_interactable = false 
+	$Dialogue.start()
 	print("the player get's a new camera")
-		
+
+
+func _on_dialogue_dialogue_finshed() -> void:
+	interactable.is_interactable = false

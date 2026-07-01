@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://4q335xxs2p" path="res://icon.svg" id="1_uxhar"]
 [ext_resource type="PackedScene" uid="uid://bse3ofloln8gp" path="res://May/NPC 2!!!!!/interactable.tscn" id="2_oe7gd"]
 [ext_resource type="PackedScene" uid="uid://dfjmgbfc2sb05" path="res://May/NPC 2!!!!!/testplayer.tscn" id="4_lynk3"]
+[ext_resource type="PackedScene" uid="uid://d075t8atft5sm" path="res://May/Text/dialogue.tscn" id="5_0bx5i"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_bffcx"]
 
@@ -17,19 +18,21 @@ size = Vector2(458, 20)
 script = ExtResource("1_bffcx")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=743632848]
+position = Vector2(311, 347)
 shape = SubResource("CircleShape2D_bffcx")
 
 [node name="Icon" type="Sprite2D" parent="." unique_id=1836757005]
-position = Vector2(0, -19)
+position = Vector2(314, 340)
 texture = ExtResource("1_uxhar")
 
 [node name="interactable" parent="." unique_id=1583510944 instance=ExtResource("2_oe7gd")]
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="interactable" unique_id=1517780492]
-position = Vector2(-3, -21)
+position = Vector2(316, 339)
 shape = SubResource("CircleShape2D_oe7gd")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1699310332]
+position = Vector2(312, 352)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1696735153]
 position = Vector2(154, 76)
@@ -37,3 +40,11 @@ shape = SubResource("RectangleShape2D_0bx5i")
 
 [node name="Player" parent="StaticBody2D" unique_id=804321168 instance=ExtResource("4_lynk3")]
 position = Vector2(183, 20)
+
+[node name="Dialogue" parent="." unique_id=326647729 instance=ExtResource("5_0bx5i")]
+offset_left = -133.0
+offset_top = -103.0
+offset_right = -93.0
+offset_bottom = -63.0
+
+[connection signal="dialogue_finshed" from="Dialogue" to="." method="_on_dialogue_dialogue_finshed"]
