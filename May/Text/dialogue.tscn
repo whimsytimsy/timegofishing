@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://d075t8atft5sm"]
+
+[ext_resource type="Script" uid="uid://d0jhoqkhwlp7q" path="res://May/Text/dialoguespirit.gd" id="1_31xmx"]
+[ext_resource type="Texture2D" uid="uid://b7aw1xuj8gq73" path="res://May/Text/chat_bubble-removebg-preview.png" id="1_ppnqa"]
+
+[node name="Dialogue" type="Control" unique_id=326647729]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_31xmx")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="." unique_id=6963456]
+layout_mode = 0
+offset_left = 458.0
+offset_top = 447.0
+offset_right = 498.0
+offset_bottom = 487.0
+metadata/_edit_group_ = true
+
+[node name="ChatBubbleRemovebgPreview" type="Sprite2D" parent="NinePatchRect" unique_id=2071451739]
+position = Vector2(176, -81)
+scale = Vector2(0.72, 0.52)
+texture = ExtResource("1_ppnqa")
+
+[node name="Name" type="RichTextLabel" parent="NinePatchRect" unique_id=1096303453]
+layout_mode = 0
+offset_left = 22.000006
+offset_top = -140.0
+offset_right = 128.29486
+offset_bottom = -102.57593
+scale = Vector2(1.3641298, 2.08422)
+theme_override_colors/default_color = Color(0.01, 0.01, 0.01, 1)
+text = "Spirit:"
+
+[node name="Text" type="RichTextLabel" parent="NinePatchRect" unique_id=1701738061]
+layout_mode = 0
+offset_left = 57.0
+offset_top = -101.0
+offset_right = 353.0
+offset_bottom = -20.0
+theme_override_colors/default_color = Color(0.02, 0.02, 0.02, 1)
+theme_override_font_sizes/normal_font_size = 20
+text = "Blah Blah Blah Blah"
