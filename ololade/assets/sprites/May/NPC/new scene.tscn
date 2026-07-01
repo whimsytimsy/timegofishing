@@ -1,7 +1,0 @@
-[gd_scene format=3 uid="uid://bdcrjc0ormd0t"]
-
-[ext_resource type="PackedScene" uid="uid://brpq8o482dqkh" path="res://May/NPC/npc.tscn" id="1_en1em"]
-
-[node name="NewScene" type="Node2D" unique_id=1793043637]
-
-[node name="NPC" parent="." unique_id=886241246 instance=ExtResource("1_en1em")]
