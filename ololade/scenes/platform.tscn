@@ -5,6 +5,8 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8leqq"]
 size = Vector2(32, 8)
 
+[sub_resource type="Curve2D" id="Curve2D_c5ewc"]
+
 [node name="Platform" type="AnimatableBody2D" unique_id=1761238708]
 collision_layer = 12
 collision_mask = 2
@@ -18,3 +20,6 @@ one_way_collision = true
 texture = ExtResource("1_c5ewc")
 region_enabled = true
 region_rect = Rect2(16, 0, 32, 9)
+
+[node name="MovingPlatformLarge" type="Path2D" parent="." unique_id=799959993]
+curve = SubResource("Curve2D_c5ewc")

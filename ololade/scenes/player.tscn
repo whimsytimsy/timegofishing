@@ -1,47 +1,11 @@
 [gd_scene format=3 uid="uid://cwavauk105vkc"]
 
 [ext_resource type="Script" uid="uid://cpsic3olvxk5u" path="res://ololade/scripts/player.gd" id="1_472ao"]
-[ext_resource type="Texture2D" uid="uid://dwfxemi03jbph" path="res://ololade/assets/sprite/knight.png" id="2_472ao"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_oubnh"]
-atlas = ExtResource("2_472ao")
-region = Rect2(0, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_fvdl7"]
-atlas = ExtResource("2_472ao")
-region = Rect2(32, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_hgtel"]
-atlas = ExtResource("2_472ao")
-region = Rect2(64, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_yrx1x"]
-atlas = ExtResource("2_472ao")
-region = Rect2(96, 0, 32, 32)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_odn5d"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_oubnh")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_fvdl7")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_hgtel")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_yrx1x")
-}],
-"loop": true,
-"name": &"idle",
-"speed": 10.0
-}]
+[ext_resource type="Texture2D" uid="uid://bsx4k6ls32ql2" path="res://ololade/assets/sprite/hasumi idle default.png" id="2_472ao"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_472ao"]
-radius = 5.0
-height = 18.0
+radius = 4.0
+height = 24.0
 
 [node name="Player" type="CharacterBody2D" unique_id=804321168]
 collision_mask = 2
@@ -49,12 +13,11 @@ script = ExtResource("1_472ao")
 speed = 5.0
 jump_power = 9.0
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=646841310]
-position = Vector2(0, -12)
-sprite_frames = SubResource("SpriteFrames_odn5d")
-animation = &"idle"
-autoplay = "idle"
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=169222186]
+position = Vector2(-0.37499905, -12)
+scale = Vector2(0.018668832, 0.01761905)
+texture = ExtResource("2_472ao")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=907973802]
-position = Vector2(0, -9)
+position = Vector2(0, -12)
 shape = SubResource("CapsuleShape2D_472ao")
