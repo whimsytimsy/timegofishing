@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://b507bglx7xfta"]
+
+[ext_resource type="Texture2D" uid="uid://b7aw1xuj8gq73" path="res://May/Text/chat_bubble-removebg-preview.png" id="1_hrt21"]
+
+[node name="TextBubble#2" type="CanvasLayer" unique_id=757290193]
+
+[node name="NinePatchRect" type="NinePatchRect" parent="." unique_id=1953439492]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ChatBubble" type="Sprite2D" parent="." unique_id=1205298468]
+position = Vector2(254, 142)
+texture = ExtResource("1_hrt21")
+
+[node name="Label" type="Label" parent="ChatBubble" unique_id=1871703794]
+offset_left = -231.0
+offset_top = -98.0
+offset_right = 243.0
+offset_bottom = 32.0
+theme_override_colors/font_color = Color(0.011764706, 0.011764706, 0.011764706, 1)
+theme_override_font_sizes/font_size = 27
+text = "Spirit: 
+You have unlocked the next 
+camera!"

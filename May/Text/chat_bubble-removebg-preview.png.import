@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b7aw1xuj8gq73"
-path="res://.godot/imported/chat_bubble-removebg-preview.png-6c4a10b5b421e51dd61dd1c5cd8ae166.ctex"
+path="res://.godot/imported/chat_bubble-removebg-preview.png-8fa6565c1f51d91af172596e898ecc66.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://May/NPC 2!!!!!/chat_bubble-removebg-preview.png"
-dest_files=["res://.godot/imported/chat_bubble-removebg-preview.png-6c4a10b5b421e51dd61dd1c5cd8ae166.ctex"]
+source_file="res://May/Text/chat_bubble-removebg-preview.png"
+dest_files=["res://.godot/imported/chat_bubble-removebg-preview.png-8fa6565c1f51d91af172596e898ecc66.ctex"]
 
 [params]
 
