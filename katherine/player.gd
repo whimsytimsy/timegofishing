@@ -2,6 +2,7 @@ extends Area2D
 
 @export var speed = 250
 var screen_size
+var JUMP_VELOCITY = -300.0
 
 
 func _ready():
@@ -11,14 +12,14 @@ func _ready():
 
 func _process(delta):
 	var velocity = Vector2.ZERO
-	if Input.is_action_pressed("walk_forward"):
+	if Input.is_action_pressed("right"):
 		velocity.x += 1
-	if Input.is_action_pressed("walk_backward"):
+	if Input.is_action_pressed("left"):
 		velocity.x -= 1
 	if Input.is_action_pressed("dash"):
 		velocity.x += 2
 	if Input.is_action_pressed("jump"):
-		velocity.y -= 1
+		velocity.y = JUMP_VELOCITY 
 
 	if velocity.length() > 0:
 		velocity = velocity.normalized() * speed

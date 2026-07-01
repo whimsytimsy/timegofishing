@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://ix1psk52genu"]
+
+[ext_resource type="PackedScene" uid="uid://dt1732m6y3sx4" path="res://katherine/player.tscn" id="1_6fwxv"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_iilwo"]
+distance = -251.0
+
+[node name="EVIL game (test)" type="Node2D" unique_id=2070916479]
+
+[node name="Player" parent="." unique_id=1591041491 instance=ExtResource("1_6fwxv")]
+position = Vector2(216, 180)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=2077207490]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1852386701]
+position = Vector2(218, 18)
+shape = SubResource("WorldBoundaryShape2D_iilwo")
