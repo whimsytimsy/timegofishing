@@ -12,10 +12,8 @@ script = ExtResource("1_31xmx")
 
 [node name="NinePatchRect" type="NinePatchRect" parent="." unique_id=6963456]
 layout_mode = 0
-offset_left = 458.0
-offset_top = 447.0
-offset_right = 498.0
-offset_bottom = 487.0
+offset_right = 40.0
+offset_bottom = 40.0
 metadata/_edit_group_ = true
 
 [node name="ChatBubbleRemovebgPreview" type="Sprite2D" parent="NinePatchRect" unique_id=2071451739]

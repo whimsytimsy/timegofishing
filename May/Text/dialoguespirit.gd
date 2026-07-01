@@ -39,6 +39,8 @@ func next_script():
 		d_active = false
 		$NinePatchRect.visible = false
 		emit_signal("dialogue_finshed")
+		print("Dialog Finished")
+		get_tree().change_scene_to_file("res://ololade/scenes/level_1.tscn")
 		return 
 
 	$NinePatchRect/Name.text = dialogue[current_dialogue_id]['name']
