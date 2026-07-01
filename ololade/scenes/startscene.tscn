@@ -179,7 +179,8 @@ texture = ExtResource("2_qk1si")
 3:15/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_llfmd"]
-physics_layer_0/collision_layer = 1
+physics_layer_0/collision_layer = 2
+physics_layer_0/collision_mask = 7
 sources/0 = SubResource("TileSetAtlasSource_g32u1")
 
 [node name="Puzzle1" type="Node2D" unique_id=675903603]

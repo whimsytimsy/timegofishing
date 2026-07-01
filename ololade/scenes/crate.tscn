@@ -1,18 +1,20 @@
-[gd_scene format=3 uid="uid://cqqhrlcugev5g"]
+[gd_scene format=3 uid="uid://jxkg75talgcp"]
 
-[ext_resource type="Texture2D" uid="uid://b23iqlu47tsdm" path="res://ololade/assets/sprites/world_tileset.png" id="1_ons8i"]
+[ext_resource type="Texture2D" uid="uid://dirimkoxhagc1" path="res://ololade/assets/sprite/world_tileset.png" id="1_0bkqx"]
+[ext_resource type="Script" uid="uid://vpktd0gdge3w" path="res://ololade/scripts/crate.gd" id="1_4igrt"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ons8i"]
 size = Vector2(16, 16)
 
-[node name="RigidBody2D" type="RigidBody2D" unique_id=740741015]
-mass = 0.001
-gravity_scale = 0.0
+[node name="Crate" type="RigidBody2D" unique_id=740741015]
+collision_layer = 4
+collision_mask = 2
+script = ExtResource("1_4igrt")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1797426691]
 shape = SubResource("RectangleShape2D_ons8i")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1480063292]
-texture = ExtResource("1_ons8i")
+texture = ExtResource("1_0bkqx")
 region_enabled = true
 region_rect = Rect2(112, 48, 16, 16)
