@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://dqgs6r8m2h61b"]
+
+[sub_resource type="Curve2D" id="Curve2D_5layq"]
+
+[node name="MovingPlatformLarge" type="Path2D" unique_id=104864951]
+curve = SubResource("Curve2D_5layq")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="." unique_id=1908263580]
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="PathFollow2D" unique_id=1473443891]
+
+[node name="AnimatableBody2D" type="AnimatableBody2D" parent="." unique_id=947573995]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableBody2D" unique_id=1365262003]
+
+[node name="Sprite2D" type="Sprite2D" parent="AnimatableBody2D" unique_id=1147031184]
