@@ -12,9 +12,11 @@ func _ready():
 	$NinePatchRect.visible = false
 
 func start():
+	print("yes work")
 	if d_active:
 		return
 	d_active = true
+	$NinePatchRect.visible = true
 	dialogue = load_dialogue()
 	current_dialogue_id = -1
 	next_script()
