@@ -1,25 +1,41 @@
-[gd_scene format=3 uid="uid://cxqgljhvclkeu"]
+[gd_scene format=3 uid="uid://dgxrxrkcrv71m"]
 
-[ext_resource type="Texture2D" uid="uid://cam6q8eisebmr" path="res://ololade/assets/sprite/platforms.png" id="1_c5ewc"]
+[ext_resource type="Script" uid="uid://cmpxbapeb1why" path="res://ololade/scripts/platform.gd" id="1_s8bxr"]
+[ext_resource type="Texture2D" uid="uid://cam6q8eisebmr" path="res://ololade/assets/sprite/platforms.png" id="2_c1gtx"]
+[ext_resource type="Script" uid="uid://c8pl1vb2i8i7k" path="res://ololade/scripts/animatable_body_2d.gd" id="2_d0b3f"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_8leqq"]
-size = Vector2(32, 8)
+[sub_resource type="Curve2D" id="Curve2D_ry5bi"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -82)
+}
+point_count = 2
 
-[sub_resource type="Curve2D" id="Curve2D_c5ewc"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ph1ng"]
+size = Vector2(32, 6)
 
-[node name="Platform" type="AnimatableBody2D" unique_id=1761238708]
-collision_layer = 10
+[node name="Path2D" type="Path2D" unique_id=1323559650 node_paths=PackedStringArray("path_follow_2D")]
+curve = SubResource("Curve2D_ry5bi")
+script = ExtResource("1_s8bxr")
+path_follow_2D = NodePath("PathFollow2D")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="." unique_id=271723783]
+rotates = false
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="PathFollow2D" unique_id=1735879572]
+remote_path = NodePath("../../AnimatableBody2D")
+
+[node name="AnimatableBody2D" type="AnimatableBody2D" parent="." unique_id=75644342]
+collision_layer = 8
 collision_mask = 2
-sync_to_physics = false
+script = ExtResource("2_d0b3f")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1285608339]
-shape = SubResource("RectangleShape2D_8leqq")
-one_way_collision = true
-
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=985735658]
-texture = ExtResource("1_c5ewc")
+[node name="Sprite2D" type="Sprite2D" parent="AnimatableBody2D" unique_id=308777384]
+position = Vector2(0, -5.9604645e-08)
+scale = Vector2(1, 0.6666666)
+texture = ExtResource("2_c1gtx")
 region_enabled = true
 region_rect = Rect2(16, 0, 32, 9)
 
-[node name="MovingPlatformLarge" type="Path2D" parent="." unique_id=799959993]
-curve = SubResource("Curve2D_c5ewc")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableBody2D" unique_id=2109897424]
+shape = SubResource("RectangleShape2D_ph1ng")
+one_way_collision = true
